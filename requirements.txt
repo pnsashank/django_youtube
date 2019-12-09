@@ -1,5 +1,5 @@
 Django==2.1
 django-background-tasks==1.2.0
-django-compat=1.0.15
+django-compat==1.0.15
 djangorestframework==3.10.3
 requests==2.22.0
