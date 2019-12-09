@@ -8,7 +8,7 @@ The youtube v3 api is fetched asynchronously through the use of tasks.py which u
 
 django_api-->'python3 manage.py process_task'(in a new command prompt), can exit the by pressing 'Ctrl+C', which kills the process.
 
-The other reason to use this is that django is a sychronous web-framework, mainly used for synchronous web applications. The use of Celery was considered, but due to the complexities arising from the use of message brokers(rabbitmq,redis etc) to communicate with Celery workers, not necessary for this simple application, hence the use of background_task library of django.
+The other reason to use this is that django is a sychronous web-framework, mainly used for synchronous web applications. The use of Celery was considered, but due to the complexities arising from the use of message brokers(rabbitmq,redis etc) to communicate with Celery workers,which is not necessary for this simple application, hence the use of background_task library of django.
 
 In order to run the 'youtube_api' application to view the paginated responses, in order of the response that are published at the latest, run 'python3 manage.py runserver' under the outer django_api directory.
 
