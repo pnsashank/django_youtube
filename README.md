@@ -4,7 +4,7 @@
 
 The database used here is sqlite3. The data that is fetched from the API is passed into the database named 'Latest_results' which contains the four fields: video_title, description, date_published, channel_title.
 
-The youtube v3 api is fetched asynchronously through the use of tasks.py which uses 'background_task' library from django to achieve this. 'background_task' runs only when written in a separate program called tasks.py. Hence the use of tasks.py. Inorder to populate the database in background asynchronously run 'python3 manage.py process_task' under the outer django_api directoy.
+The data is fetched asynchronously through the use of tasks.py which uses 'background_task' library from django to achieve this. 'background_task' runs only when written in a separate program called tasks.py. Hence the use of tasks.py. Inorder to populate the database in background asynchronously run 'python3 manage.py process_task' under the outer django_api directoy.
 
 django_api-->'python3 manage.py process_task'(in a new command prompt), can exit the by pressing 'Ctrl+C', which kills the process.
 
