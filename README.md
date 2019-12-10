@@ -1,15 +1,15 @@
 # django_youtube
 List of commands to run:
 
-- pip3 install -r requirements.txt
+```pip3 install -r requirements.txt```
 
-- python3 manage.py migrate
+```python3 manage.py migrate```
 
-- python3 manage.py makemigrations youtube_api
+```python3 manage.py makemigrations youtube_api```
 
-- python3 manage.py runserver
+```python3 manage.py runserver```
 
-- in a new command line, python3 manage.py process_tasks
+ ```python3 manage.py process_tasks``` (in a new command prompt window)
 
 'youtube_api' application of this project hosts the url to fetch results from the Youtube Data v3 API and presents in json formatted output that includes pagination.
 
